@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    overflow: hidden;
+}
+
+.home{
+    background-color: hsl(353, 100%, 62%);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    border-bottom-left-radius: 200px;
+}
+
+.bg img{
+    transform: translateY(-200%);
+    position: absolute;
+    top: 0;
+    right: 20%;
+    animation: rotate 7s linear infinite;
+    height: 700px;
+    overflow: hidden;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.logo-img{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img nav ol{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-family: "Raleway", sans-serif;
+}
+
+nav ol li{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* nav ol li img:hover{
+    transform: rotate(160deg);
+} */
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    z-index: 999;
+    position: absolute;
+    left: 25%;
+    color: white;
+    font-size: 20px;
+    padding-top: 130px;
+}
+
+.home-content h1{
+    font-size: 4vw;
+    font-family: "Overpass", sans-serif;
+}
+
+.home-content span{
+    font-family: "Poppins", sans-serif;
+}
+
+.start{
+    padding: 15px;
+    border: none;
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+    font-size: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.learn{
+    padding: 15px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border-radius: 40px;
+    font-family: "Poppins", sans-serif;cursor: pointer;
+}
+
+.login{
+    padding: 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =================== second section style begins ==================== */
+
+.second-div{
+    width: 100%;
+}
+
+.content-img{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.image img{
+    transform: translateX(25%);
+    position: relative;
+    height: 700px;
+}
+
+.design h1{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 4vw;
+    color: hsl(207, 13%, 34%);
+    font-family: "Overpass", sans-serif;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    gap: 60px;
+    min-width: 600px;
+}
+
+.introduce, .robust{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.introduce p, .robust p{
+    font-size: 20px;
+    color: hsl(207, 13%, 34%);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.introduce h1, .robust h1{
+    font-size: 2.5vw;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(207, 13%, 34%);
+}
+
+
+
+.third-div{
+    background-color: hsl(237, 17%, 21%);
+    height: 80vh;
+    width: 100%;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 20px;
+    color: white;
+}
+
+.bg-img{
+    background: url(./images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: 900px;
+    transform: translateY(-40%);
+    height: 920px;
+    position: relative;
+    display: flex;
+}
+
+.phone img{
+    transform: translateY(45%);
+    overflow: visible;
+    height: 700px;
+    position: absolute;
+}
+
+.phone{
+    display: flex;
+}
+
+
+
+.content-me{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.image-me img{
+    transform: translateX(-10%);
+    position: relative;
+    height: 700px;
+}
+
+.content-us{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    gap: 60px;
+    min-width: 600px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(237, 17%, 21%);
+    color: white;
+    padding: 100px;
+    border-top-right-radius: 100px;
+}
+
+footer ol li{
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.product header{
+    padding: 5px;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+}
